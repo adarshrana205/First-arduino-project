@@ -4,7 +4,7 @@ const int echoPin = 12;
 
 long duration;
 int distance;
-Servo myServo; 
+Servo myServo; //created an object of class servo in servo.h header file
 void setup() {
   Serial.begin(57600);
   pinMode(trigPin, OUTPUT); 
