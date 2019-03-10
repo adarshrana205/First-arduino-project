@@ -15,7 +15,7 @@ void setup() {
 
   size (1366, 768);
   smooth();
-  myPort = new Serial(this, "COM8", 57600); 
+  myPort = new Serial(this, "COM8", 57600); //take the port as per your port in arduino
   myPort.bufferUntil('.'); }
 void draw() {
 
