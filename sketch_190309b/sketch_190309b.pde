@@ -20,7 +20,7 @@ void setup() {
 void draw() {
 
   fill(98, 245, 31);
-  // simulating motion blur and slow fade of the moving line
+ 
   noStroke();
   fill(0, 4);
   rect(0, 0, width, height-height*0.065);
@@ -66,7 +66,7 @@ void drawObject() {
   pushMatrix();
   translate(width/2, height-height*0.074);
   strokeWeight(9);
-  stroke(255, 10, 10); // red color
+  stroke(255, 10, 10); 
   pixsDistance = iDistance*((height-height*0.1666)*0.025); 
   
   if (iDistance<40) {
@@ -79,8 +79,9 @@ void drawLine() {
   pushMatrix();
   strokeWeight(9);
   stroke(30, 250, 60);
-  translate(width/2, height-height*0.074); // moves the starting coordinats to new location
-  line(0, 0, (height-height*0.12)*cos(radians(iAngle)), -(height-height*0.12)*sin(radians(iAngle))); // draws the line according to the angle
+  translate(width/2, height-height*0.074);
+  line(0, 0, (height-height*0.12)*cos(radians(iAngle)), -(height-height*0.12)*sin(radians(iAngle)));
+  
   popMatrix();
 }
 void drawText() { 
