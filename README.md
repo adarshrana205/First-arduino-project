@@ -1,2 +1,2 @@
 # First-arduino-project
-Created a radar using arduino
+Created a radar using arduino.
